@@ -1,0 +1,23 @@
+@forward 'element-plus/theme-chalk/src/common/var.scss' with (
+  $colors: (
+    'primary': (
+      'base': #409EFF,
+    ),
+  ),
+);
+// @forward 'element-plus/theme-chalk/src/dark/var.scss' with (
+//   $colors: (
+//     'primary': ( 
+//       'base': #27619D,
+//     ),
+//   ),
+// );
+
+@use "element-plus/theme-chalk/src/index.scss";
+@use "element-plus/theme-chalk/dark/css-vars.css";
+html{
+  --el-color-primary: #409EFF;
+}
+html.dark{
+  --el-color-primary: #27619D;
+}
